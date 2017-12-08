@@ -66,7 +66,7 @@ oconv -f materialBlack.rad roomBlack.rad skies/suns.rad materials.rad objects/Gl
 ##Calculate illuminance sun coefficients for illuminance calculations.
 rcontrib -I+ -ab 1 -y 100 -n 16 -ad 256 -lw 1.0e-3 -dc 1 -dt 0 -dj 0 -faf -e MF:6 -f reinhart.cal -b rbin -bn Nrbins -m solar octrees/sunCoefficientsDDS.oct < points.txt > matrices/cds/cdsDDS.mtx
 
-#Create  sun matrix with 2305 suns
+#Create  sun matrix with 5165 suns
 gendaymtx -5 0.533 -d -m 6 assets/NYC.wea > skyVectors/NYCsunM6.smx
 
 ##RESULTS
